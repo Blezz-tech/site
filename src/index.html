@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Мой список</title>
+    <title>Marvik</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,18 +9,72 @@
 
   <body class="theme">
     <header class="header">
-        <div class="burger">
-
+      <div class="burger"></div>
+      <img src="./assets/images/logo.svg" alt="logo" class="logo" />
+      <div class="social-bar">
+        <div class="social-item">
+          <img src="./assets/images/social-bar/" alt="VK" />
         </div>
-        <img src="./assets/images/logo.svg" alt="logo" class="logo">
-        <div class="social-bar">
-            <div class="social-item"><img src="" alt=""></div>
-            <div class="social-item"><img src="" alt=""></div>
-            <div class="social-item"><img src="" alt=""></div>
-            <div class="social-item"><img src="" alt=""></div>
-            <div class="social-item"><img src="" alt=""></div>
+        <div class="social-item">
+          <img src="./assets/images/social-bar/" alt="Instagram" />
         </div>
+        <div class="social-item">
+          <img src="./assets/images/social-bar/" alt="?" />
+        </div>
+        <div class="social-item">
+          <img src="./assets/images/social-bar/" alt="Telegram" />
+        </div>
+        <div class="social-item">
+          <img src="./assets/images/social-bar/" alt="What's App" />
+        </div>
+      </div>
     </header>
+    <div class="start">
+      <video autoplay muted loop id="start-bg-video">
+        <source
+          src="./assets/video/start-video/test-1980x1080.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="description">
+        <p class="start-title">VIDEOMAKER</p>
+        <p class="start-text">Съемка музыкальных и танцевальных клипов<br>event-мероприятий и рекламы</p>
+      </div>
+    </div>
+    <div class="about-us">
+      <div class="box">
+        <img
+          class="title-img"
+          src="./assets/images/about-us-photo.png"
+          alt="Фотография Виктории"
+        />
+        <div class="description">
+          <p class="description-text">
+            Меня зовут Виктория<br />и я счастливый человек,<br />потому что моя
+            работа –<br />самое большое удовольствие. <br /><br />
+            Более 4 лет занимаюсь<br />
+            фото- видео- съемкой. <br />
+            Параллельно получила образование <br />
+            организатора мероприятий и <br />
+            театрализованных представлений.<br /><br />
+            Так же я регулярно посещаю<br />
+            очные мастер-классыпо фото и видео.<br />
+            Совершенствую умения<br />
+            с помощью онлайн-школ и вебинаров.<br /><br />
+            Я очень ценю хороший сервис.<br />
+            Поэтому делаю всё, чтобы вы<br />
+            ни о чем не переживали, и беру все<br />
+            организационные вопросы на себя.<br /><br />
+            До встречи на съемке!
+          </p>
+          <div class="description-buttons">
+            <button class="btn-left">Услуги</button>
+            <button class="btn-right">Фото/Видео</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
