@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.theme {
+  --main-background: black;
+}
+
+.header {
+  background-color: var(--main-background);
+}
+
+.burger {
+}
+
+.logo {
+}
+
+.social-bar {
+}
+
+.social-item {
+}
