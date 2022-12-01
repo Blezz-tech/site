@@ -37,19 +37,16 @@
   background-color: var(--main-background);
 }
 
-.header .burger {
-}
+/* .header .burger {} */
 
 .header .logo {
   width: 124px;
   height: 25px;
 }
 
-.header .social-bar {
-}
+/* .header .social-bar {} */
 
-.header .social-item {
-}
+/* .header .social-item {} */
 
 /* START */
 
@@ -184,3 +181,607 @@
   line-height: 19px;
 }
 
+/* EVENTS */
+
+.events {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+
+  padding: 60px 0;
+
+  background-color: var(--main-background);
+
+  gap: 100px;
+}
+.events .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 220px;
+  height: 313px;
+  padding: 0;
+
+  background-image: url("../images/events-background.png");
+
+  gap: 30px;
+}
+.events .title {
+  text-align: center;
+
+  color: #FFF;
+
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  font-weight: var(--main-text-font-weight);
+  font-style: var(--main-text-font-style);
+  line-height: var(--main-text-line-height);
+}
+
+.events .card-btn {
+  width: 120px;
+  height: 45px;
+
+  text-align: center;
+
+  color: #FFF;
+  border: 1px solid #FFF;
+  border-radius: 30px;
+  background-color: initial;
+
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  font-weight: var(--main-text-font-weight);
+  font-style: var(--main-text-font-style);
+  line-height: var(--main-text-line-height);
+}
+
+/* SERVICES */
+
+.services {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 45px;
+
+  background: #000;
+}
+
+.services .services-title {
+  text-align: center;
+
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 38px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 50px;
+}
+
+.services .cards {
+  display: grid;
+  justify-content: center;
+
+  margin-top: 145px;
+
+  grid-template-columns: repeat(3, 300px);
+  gap: 30px;
+}
+
+.services .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 300px;
+  height: 215px;
+
+  border-radius: 5px;
+  background: #333;
+
+  gap: 10px;
+}
+
+.services .card-title {
+  text-align: center;
+
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 26px;
+}
+
+.services .card-text {
+  text-align: center;
+
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 19px;
+}
+
+/* MY WORKS */
+
+.my-works {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  background-color: #000;
+}
+
+.my-works .title {
+  text-align: center;
+
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 38px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 50px;
+}
+
+.my-works .main-video {
+  width: 1200px;
+  height: 600px;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.my-works #my-works-main-video {
+  width: 100%;
+  height: 100%;
+}
+
+.my-works .second-videos {
+  display: grid;
+  justify-content: center;
+
+  margin-top: 100px;
+
+  grid-template-columns: repeat(2, 560px);
+  gap: 30px;
+}
+
+.my-works .second-videos iframe {
+  width: 560px;
+  height: 315px;
+}
+
+.my-works .third-photos {
+  display: grid;
+  justify-content: center;
+
+  margin-top: 100px;
+
+  grid-template-columns: repeat(3, 400px);
+  gap: 30px;
+}
+
+.my-works .photo {
+  width: 400px;
+  height: 500px;
+}
+
+/* RATES */
+
+.rates {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  background-color: #000;
+}
+
+/* RATES VIDEO */
+
+.rates .rates-video {
+  width: 100%;
+}
+
+.rates .rates-video .title {
+  text-align: center;
+
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 53px;
+}
+
+.rates .rates-video .subtitle {
+  margin-top: 20px;
+
+  text-align: center;
+
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+}
+
+.rates .rates-video .container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  margin-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.rates .rates-video .shooting {
+  width: calc(35vw);
+}
+
+.rates .rates-video .shooting-title {
+  text-align: center;
+
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 32px;
+}
+
+.rates .rates-video .shooting-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-top: 30px;
+
+  gap: 30px;
+}
+
+.rates .rates-video .item {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.rates .rates-video .item-left {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.rates .rates-video .left-title {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.rates .rates-video .text-right {
+  text-align: center;
+
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.rates .rates-video .montage {
+  width: calc(45vw);
+}
+
+.rates .rates-video .montage-title {
+  text-align: center;
+
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 32px;
+}
+
+.rates .rates-video .montage-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-top: 30px;
+
+  gap: 30px;
+}
+
+.rates .rates-video .left-text {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 19px;
+}
+
+/* RATES DANCE VIDEO */
+
+.rates .rates-dance-video {
+  width: 100%;
+}
+
+.rates .rates-dance-video .title {
+  margin-top: 50px;
+
+  text-align: center;
+
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 53px;
+}
+
+.rates .rates-dance-video .subtitle {
+  margin-top: 20px;
+
+  text-align: center;
+
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+}
+
+.rates .rates-dance-video .container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  margin-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.rates .rates-dance-video .shooting {
+  width: calc(35vw);
+}
+
+.rates .rates-dance-video .shooting-title {
+  text-align: center;
+
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 32px;
+}
+
+.rates .rates-dance-video .shooting-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-top: 30px;
+
+  gap: 30px;
+}
+
+.rates .rates-dance-video .item {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.rates .rates-dance-video .item-left {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.rates .rates-dance-video .left-title {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.rates .rates-dance-video .text-right {
+  text-align: center;
+
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.rates .rates-dance-video .montage {
+  width: calc(45vw);
+}
+
+.rates .rates-dance-video .montage-title {
+  text-align: center;
+
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 32px;
+}
+
+.rates .rates-dance-video .montage-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-top: 30px;
+
+  gap: 30px;
+}
+
+.rates .rates-dance-video .left-text {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 19px;
+}
+
+/* RATES PHOTO */
+
+.rates .rates-photo {
+  width: 100%;
+}
+
+.rates .rates-photo .title {
+  margin-top: 50px;
+
+  text-align: center;
+
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 53px;
+}
+
+.rates .rates-photo .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  margin-top: 50px;
+}
+
+.rates .rates-photo .card {
+  display: flex;
+  flex-direction: column;
+
+  width: 360px;
+  height: 620px;
+
+  border: 1px solid #B0B0B0;
+  border-radius: 10px;
+  background-color: #0F0F0F;
+}
+
+.rates .rates-photo .card-name {
+  margin-top: 35px;
+
+  text-align: center;
+
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 26px;
+}
+
+.rates .rates-photo .card-text {
+  margin-top: 20px;
+
+  text-align: center;
+
+  color: #828282;
+
+  font-family: "PT Serif";
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 21px;
+}
+
+.rates .rates-photo .card-price {
+  margin-top: 35px;
+
+  text-align: center;
+
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 48px;
+}
+
+.rates .rates-photo .card-button {
+  display: block;
+
+  width: 120px;
+  height: 45px;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-left: auto;
+
+  color: #FFF;
+  border: 0;
+  border-radius: 30px;
+  background-color: #B05BD3;
+
+  font-family: "PT Serif";
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 19px;
+}
+
+/* FORM */
