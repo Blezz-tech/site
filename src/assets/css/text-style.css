@@ -1,0 +1,337 @@
+body {
+  background-color: black;
+}
+
+/* .theme {} */
+
+/* START */
+.start .start-title {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.start .start-text {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ABOUT US */
+.about-us .description-text {
+  color: #fcf9f9;
+
+  font-family: "PT Serif";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.about-us .btn-left {
+  color: #0f0f0f;
+  background: #fcf9f9;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.about-us .btn-right {
+  color: #fcf9f9;
+  background: #b55ad6;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* EVENTS */
+.events .title {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.events .card-btn {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: initial;
+
+  font-family: "PT Serif";
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* SERVICES */
+.services .services-title {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.services .card {
+  background: #333;
+}
+
+.services .card-title {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.services .card-text {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* MY WORKS */
+.my-works .title {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* RATES */
+.rates .rates-video .title {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* RATES VIDEO */
+.rates .rates-video .subtitle {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rates .rates-video .shooting-title {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rates .rates-video .left-title {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.rates .rates-video .text-right {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rates .rates-video .montage-title {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rates .rates-video .left-text {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* RATES DANCE VIDEO */
+
+.rates .rates-dance-video .title {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rates .rates-dance-video .subtitle {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rates .rates-dance-video .shooting-title {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rates .rates-dance-video .left-title {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rates .rates-dance-video .text-right {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rates .rates-dance-video .montage-title {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rates .rates-dance-video .left-text {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* RATES PHOTO */
+
+.rates .rates-photo .title {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rates .rates-photo .card {
+  border: 1px solid #b0b0b0;
+  background-color: #0f0f0f;
+}
+
+.rates .rates-photo .card-name {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rates .rates-photo .card-text {
+  color: #828282;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rates .rates-photo .card-price {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rates .rates-photo .card-button {
+  color: #fff;
+  background-color: #b05bd3;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* FORM */
+
+.my-form {
+  background-color: #0f0f0f;
+}
+
+.my-form .form-title {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.my-form .input-name {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.my-form .input-text {
+  background-color: #9e9e9e;
+}
+
+.my-form .input-text::placeholder {
+  color: #565656;
+}
+
+.my-form .form-button {
+  color: white;
+  background-color: #b05bd2;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.my-form .form-text {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* FOOTER */
+
+.footer .copyright {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer .text {
+  color: #fff;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}

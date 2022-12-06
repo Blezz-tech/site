@@ -1,0 +1,36 @@
+.content {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  height: 70px;
+}
+
+/* START */
+
+/* ABOUT US */
+
+/* EVENTS */
+
+/* SERVICES */
+
+/* MY WORKS */
+
+/* RATES */
+
+/* RATES VIDEO */
+
+/* RATES DANCE VIDEO */
+
+/* RATES PHOTO */
+
+/* FORM */
+
+/* FOOTER */
