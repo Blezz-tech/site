@@ -4,66 +4,10 @@
   }
 
   /* HEADER */
-  .header {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-
-    height: 70px;
-  }
-
-  .header .burger {
-    display: none;
-  }
-
-  .header .logo {
-    position: absolute;
-    right: 0;
-    left: 0;
-
-    display: block;
-
-    width: 124px;
-    height: 25px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .header .social-bar {
-    position: absolute;
-    right: 50px;
-
-    display: flex;
-
-    gap: 10px;
-  }
-
-  /* .header .social-item {} */
 
   /* START */
-
-  .start {
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
-  }
-
-  .start #start-bg-video {
-    width: 100%;
-    height: calc(100vh - 70px);
-  }
-
   .start .description {
-    position: absolute;
-    right: 0;
-    left: 0;
-
-    margin-top: 280px;
-    margin-right: auto;
-    margin-left: auto;
-
-    text-align: center;
+    top: 400px;
   }
 
   .start .start-title {
@@ -78,44 +22,17 @@
 
   /* ABOUT US */
 
-  .about-us {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    width: 100%;
-    margin-top: 170px;
-
-    gap: 40px;
-  }
-
   .about-us .title-img {
-    height: 100%;
+    height: 700px;
   }
 
   .about-us .description {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-
     gap: 80px;
   }
 
   .about-us .description-text {
-    text-align: left;
-
     font-size: 18px;
     line-height: 19px;
-  }
-
-  .about-us .description-buttons {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-
-    width: 100%;
   }
 
   .about-us .btn-left {
@@ -141,35 +58,19 @@
   /* EVENTS */
 
   .events {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-
-    width: 100%;
     margin-top: 60px;
 
     gap: 100px;
   }
 
   .events .card {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-
     width: 220px;
     height: 313px;
-    padding: 0;
-
-    background-image: url("../images/events-background.png");
 
     gap: 30px;
   }
 
   .events .title {
-    text-align: center;
-
     font-size: 14px;
     line-height: 24px;
   }
@@ -177,8 +78,6 @@
   .events .card-btn {
     width: 120px;
     height: 45px;
-
-    text-align: center;
 
     border-radius: 30px;
 
@@ -189,33 +88,22 @@
   /* SERVICES */
 
   .services {
-    width: 100%;
     margin-top: 100px;
   }
 
   .services .services-title {
-    text-align: center;
-
     font-size: 38px;
     line-height: 50px;
   }
 
   .services .cards {
-    display: grid;
-    justify-content: center;
-
-    margin-top: 100px;
+    margin-top: 70px;
 
     grid-template-columns: repeat(3, 300px);
     gap: 30px;
   }
 
   .services .card {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-
     width: 300px;
     height: 215px;
 
@@ -225,15 +113,11 @@
   }
 
   .services .card-title {
-    text-align: center;
-
     font-size: 20px;
     line-height: 26px;
   }
 
   .services .card-text {
-    text-align: center;
-
     font-size: 14px;
     line-height: 19px;
   }
@@ -241,33 +125,15 @@
   /* MY WORKS */
 
   .my-works {
-    width: 100%;
     margin-top: 100px;
   }
 
   .my-works .title {
-    text-align: center;
-
     font-size: 38px;
     line-height: 50px;
   }
 
-  .my-works .main-video {
-    width: 80%;
-    margin-top: 80px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .my-works #my-works-main-video {
-    width: 100%;
-    height: 100%;
-  }
-
   .my-works .second-videos {
-    display: grid;
-    justify-content: center;
-
     margin-top: 80px;
 
     grid-template-columns: repeat(2, 560px);
@@ -280,9 +146,6 @@
   }
 
   .my-works .third-photos {
-    display: grid;
-    justify-content: center;
-
     margin-top: 80px;
 
     grid-template-columns: repeat(3, 400px);
@@ -297,263 +160,77 @@
   /* RATES */
 
   .rates {
-    width: 100%;
     margin-top: 80px;
   }
 
   /* RATES VIDEO */
 
-  .rates .rates-video {
-    width: 100%;
-  }
-
-  .rates .rates-video .title {
-    text-align: center;
-
+  .rates .rates-video .rates-video-title {
     font-size: 40px;
     line-height: 53px;
   }
 
-  .rates .rates-video .subtitle {
+  .rates .rates-video .rates-video-subtitle {
     margin-top: 20px;
-
-    text-align: center;
 
     font-size: 16px;
     line-height: 21px;
   }
 
   .rates .rates-video .container {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-    margin-top: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  .rates .rates-video .shooting {
-    width: calc(20vw);
-  }
-
-  .rates .rates-video .shooting-title {
-    text-align: center;
-
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  .rates .rates-video .shooting-list {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-
     margin-top: 30px;
+  }
 
+  .rates .rates-video .list {
     gap: 30px;
   }
 
-  .rates .rates-video .item {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    justify-content: space-between;
+  .rates .rates-video .list:nth-child(1) {
+    width: 20vw;
+  }
 
-    width: 100%;
+  .rates .rates-video .list:nth-child(2) {
+    width: 30vw;
+  }
+
+  .rates .rates-video .list-title {
+    font-size: 24px;
+    line-height: 32px;
   }
 
   .rates .rates-video .item-left {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-
     gap: 20px;
   }
 
-  .rates .rates-video .left-title {
+  .rates .rates-video .item-left-title {
     font-size: 18px;
     line-height: 24px;
   }
 
-  .rates .rates-video .text-right {
-    text-align: center;
-
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .rates .rates-video .montage {
-    width: calc(30vw);
-  }
-
-  .rates .rates-video .montage-title {
-    text-align: center;
-
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  .rates .rates-video .montage-list {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-
-    margin-top: 30px;
-
-    gap: 30px;
-  }
-
-  .rates .rates-video .left-text {
+  .rates .rates-video .item-left-text {
     font-size: 14px;
     line-height: 19px;
   }
 
-  /* RATES DANCE VIDEO */
-
-  .rates .rates-dance-video {
-    width: 100%;
-  }
-
-  .rates .rates-dance-video .title {
-    margin-top: 50px;
-
-    text-align: center;
-
-    font-size: 40px;
-    line-height: 53px;
-  }
-
-  .rates .rates-dance-video .subtitle {
-    margin-top: 20px;
-
-    text-align: center;
-
-    font-size: 16px;
-    line-height: 21px;
-  }
-
-  .rates .rates-dance-video .container {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-    margin-top: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  .rates .rates-dance-video .shooting {
-    width: calc(20vw);
-  }
-
-  .rates .rates-dance-video .shooting-title {
-    text-align: center;
-
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  .rates .rates-dance-video .shooting-list {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-
-    margin-top: 30px;
-
-    gap: 30px;
-  }
-
-  .rates .rates-dance-video .item {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    justify-content: space-between;
-
-    width: 100%;
-  }
-
-  .rates .rates-dance-video .item-left {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-
-    gap: 20px;
-  }
-
-  .rates .rates-dance-video .left-title {
+  .rates .rates-video .item-right-text {
     font-size: 18px;
     line-height: 24px;
-  }
-
-  .rates .rates-dance-video .text-right {
-    text-align: center;
-
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .rates .rates-dance-video .montage {
-    width: calc(30vw);
-  }
-
-  .rates .rates-dance-video .montage-title {
-    text-align: center;
-
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  .rates .rates-dance-video .montage-list {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-
-    margin-top: 30px;
-
-    gap: 30px;
-  }
-
-  .rates .rates-dance-video .left-text {
-    font-size: 14px;
-    line-height: 19px;
   }
 
   /* RATES PHOTO */
 
-  .rates .rates-photo {
-    width: 100%;
-  }
-
   .rates .rates-photo .title {
     margin-top: 50px;
-
-    text-align: center;
 
     font-size: 40px;
     line-height: 53px;
   }
 
   .rates .rates-photo .cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
     margin-top: 50px;
   }
 
   .rates .rates-photo .card {
-    display: flex;
-    flex-direction: column;
-
     width: 360px;
     height: 620px;
 
@@ -563,16 +240,12 @@
   .rates .rates-photo .card-name {
     margin-top: 35px;
 
-    text-align: center;
-
     font-size: 20px;
     line-height: 26px;
   }
 
   .rates .rates-photo .card-text {
     margin-top: 20px;
-
-    text-align: center;
 
     font-size: 16px;
     line-height: 21px;
@@ -581,21 +254,13 @@
   .rates .rates-photo .card-price {
     margin-top: 35px;
 
-    text-align: center;
-
     font-size: 36px;
     line-height: 48px;
   }
 
   .rates .rates-photo .card-button {
-    display: block;
-
     width: 120px;
     height: 45px;
-    margin-top: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    margin-left: auto;
 
     border-radius: 30px;
 
@@ -606,16 +271,9 @@
   /* FORM */
 
   .my-form {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    width: 100%;
     margin-top: 40px;
     padding-top: 70px;
     padding-bottom: 50px;
-
-    border-radius: 10px;
   }
 
   .my-form .form-title {
@@ -624,18 +282,12 @@
   }
 
   .my-form .form {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: row;
-
     margin-top: 70px;
 
     gap: 20px;
   }
 
   .my-form .input-name {
-    display: block;
-
     margin-left: 30px;
 
     font-size: 20px;
@@ -643,8 +295,6 @@
   }
 
   .my-form .input-text {
-    display: block;
-
     width: 230px;
     height: 60px;
     margin-top: 10px;
@@ -673,28 +323,16 @@
   /* FOOTER */
 
   .footer {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-
     margin-top: 40px;
     padding-bottom: 40px;
   }
 
   .footer .copyright {
-    position: absolute;
-    left: 40px;
-
-    display: block;
-
     font-size: 16px;
     line-height: 21px;
   }
 
   .footer .text {
-    text-align: center;
-
     font-size: 40px;
     line-height: 53px;
   }
