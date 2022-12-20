@@ -57,13 +57,41 @@ body {
   font-style: normal;
 }
 
+.events .card:nth-child(1) {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/assets/images/events/photo-1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.events .card:nth-child(2) {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/assets/images/events/photo-2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.events .card:nth-child(3) {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/assets/images/events/photo-3.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.events .card:nth-child(4) {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/assets/images/events/photo-4.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .events .card-btn {
   color: #FFF;
   border: 1px solid #FFF;
   background-color: initial;
 
   font-family: "PT Serif";
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 
