@@ -31,7 +31,7 @@
 
 <body class="bg-dark">
   <!-- NAVBAR -->
-  <!-- <div class="container py-xl-3">
+  <div class="container py-xl-3">
     <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt=""></a>
@@ -57,18 +57,18 @@
         </div>
       </div>
     </nav>
-  </div> -->
+  </div>
   <!-- VIDEO -->
-  <!-- <video autoplay loop id="video-background" class="h-auto w-100">
+  <video autoplay loop id="video-background" class="h-auto w-100">
     <source src="./assets/video/start-video/test-1280x720.mp4" type="video/mp4"> Your brower is old </source>
   </video>
   <div class="position-absolute top-50 w-100">
     <h1 class="text-white text-center">VIDEOMAKERDay</h1>
     <h2 class="text-white text-center">Съемка музыкальных и танцевальных клипов<br />event-мероприятий и
       рекламы</h2>
-  </div> -->
+  </div>
   <!-- START -->
-  <!-- <div class="container py-4">
+  <div class="container py-4">
     <div class="about-us">
       <div class="row">
         <div class="col-6">
@@ -100,9 +100,9 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
   <!-- services -->
-  <!-- <div class="container py-5">
+  <div class="container py-5">
     <div class="row">
       <div class="col-3">
         <p class="fs-4">Танцевальные <br /> клипы</p>
@@ -121,9 +121,9 @@
       <div class="col-3"><button type="button" class="btn rounded-5 px-3 py-1 btn-outline-light">Тарифы</button></div>
       <div class="col-3"><button type="button" class="btn rounded-5 px-3 py-1 btn-outline-light">Тарифы</button></div>
     </div>
-  </div> -->
+  </div>
   <!-- SERVICES -->
-  <!-- <div class="container py-5">
+  <div class="container py-5">
     <h2 class="text-center">Услуги которые я предоставляю</h2>
     <div class="row p-5 gy-2 gy-md-3 gy-lg-4 justify-content-center">
       <div class="col-12 col-sm-6 col-lg-4 text-center bg-gray rounded-3 p-4 mx-3" style="width: 21rem;">
@@ -165,17 +165,17 @@
           <br />открытость. </p>
       </div>
     </div>
-  </div> -->
+  </div>
 
-  <!-- <div class="container py-5">
+  <div class="container py-5">
     <h2>Мои работы:</h2>
     <iframe class="w-100" style="height: 40vw;" src="https://www.youtube.com/embed/z1fSHCu5-tM"
       title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen></iframe>
-  </div> -->
+  </div>
 
-  <!-- <div class="container">
+  <div class="container">
     <div class="row gy-3">
       <div class="col-12 col-sm-6">
         <iframe class="w-100" style="height: 20vw;" src="https://www.youtube.com/embed/PAvXDI5r1QY"
@@ -202,9 +202,9 @@
           allowfullscreen></iframe>
       </div>
     </div>
-  </div> -->
+  </div>
 
-  <!-- <div class="container">
+  <div class="container">
     <div class="row gy-4">
       <img class="col-12 col-md-6 col-xl-4" src="./assets/images/works/photo-1.jpg" alt="my work 1" />
       <img class="col-12 col-md-6 col-xl-4" src="./assets/images/works/photo-2.jpg" alt="my work 2" />
@@ -216,114 +216,64 @@
       <img class="col-12 col-md-6 col-xl-4" src="./assets/images/works/photo-8.jpeg" alt="my work 8" />
       <img class="col-12 col-md-6 col-xl-4" src="./assets/images/works/photo-9.jpeg" alt="my work 8" />
     </div>
-  </div> -->
+  </div>
 
   <div id="app-lists">
-    <div class="container p-5 py-5" v-for="list in lists">
+    <div class="container" v-for="list in lists">
       <h2 class="text-center">{{ list.title }}</h2>
       <p class="text-center">{{ list.subtitle }}</p>
       <div class="row">
-        <div class="col-5 px-5">
+        <div class="col-5 px-xl-4 px-md-3 px-2">
           <p class="fs-3 text-center">{{ list.table_left.title }}</p>
           <div class="d-flex justify-content-between" v-for="item in list.table_left.body">
             <div>
               <p>{{ item.title }}</p>
               <p>{{ item.subtitle}}</p>
             </div>
-            <p>{{ item.price }}</p>
+            <p class="ms-2">{{ item.price }}</p>
           </div>
         </div>
-        <div class="col-7 px-5">
+        <div class="col-7 px-xl-4 px-md-3 px-2">
           <p class="fs-3 text-center">{{ list.table_right.title }}</p>
           <div class="d-flex justify-content-between" v-for="item in list.table_right.body">
             <div>
               <p>{{ item.title }}</p>
               <p>{{ item.subtitle}}</p>
             </div>
-            <p>{{ item.price }}</p>
+            <p class="ms-2">{{ item.price }}</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
-  <div class="container py-5">
 
-  </div>
-
-  <!-- <div class="rates-photo">
-    <div class="title">Тарифы фото</div>
-    <div class="cards">
-      <div class="card">
-        <p class="card-name">Экспресс-съемка</p>
-        <p class="card-text">30 минут</p>
-        <p class="card-price">3000</p>
-        <p class="card-text">консультация перед съемкой</p>
-        <p class="card-text">15 фотографий в авторской <br />обработке</p>
-        <p class="card-text">1 образ</p>
-        <button class="card-button">Выбрать</button>
-      </div>
-      <div class="card">
-        <p class="card-name">Премиум</p>
-        <p class="card-text">2 часа</p>
-        <p class="card-price">7000</p>
-        <p class="card-text">консультация перед съемкой</p>
-        <p class="card-text">подбор образа</p>
-        <p class="card-text">1-2 образ</p>
-        <p class="card-text">подбор локации</p>
-        <p class="card-text">50 фотографий в авторской <br />обработке</p>
-        <p class="card-text">20 фотографий в ретуши <br />выбираете вы</p>
-        <button class="card-button">Выбрать</button>
-      </div>
-      <div class="card">
-        <p class="card-name">Стандарт</p>
-        <p class="card-text">1 час</p>
-        <p class="card-price">5000</p>
-        <p class="card-text">консультация перед съемкой</p>
-        <p class="card-text">подбор образа</p>
-        <p class="card-text">1 образ</p>
-        <p class="card-text">подбор локации</p>
-        <p class="card-text">30 фотографий в авторской <br />обработке</p>
-        <p class="card-text">10 фотографий в ретуши <br />выбираете вы</p>
-        <button class="card-button">Выбрать</button>
+  <div id="app-cards">
+    <div class="container py-5">
+      <h2 class="text-center">Тарифы фото</h2>
+      <div class="row g-3 mt-5">
+        <div class="col-xl-4 col-md-6 col-12" v-for="item in photos">
+          <div class="px-3 py-5 border border-light d-flex flex-column rounded-5 justify-content-between h-100">
+            <div>
+              <h4 class="text-center text-light">{{item.title}}</h4>
+              <p class="text-center text-secondary">{{item.time}}</p>
+              <p class="text-center fs-3">{{item.price}}</p>
+              <p class="text-center text-secondary" v-for="other in item.others">{{ other }}</p>
+            </div>
+            <button type="button" class="btn btn-primary mt-3 mx-auto">Выбрать</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <div class="container py-5">
+    <h2 class="text-center">Мои Контакты:</h2>
 
   </div>
 
-  <!-- <div class="my-form">
-    <p class="form-title">Запишись на съемку</p>
-    <form class="form" action="" method="post">
-      <div>
-        <p class="input-name">Имя и Фамилия</p>
-        <input class="input-text" type="text" name="fullname" placeholder="Иванов Иван" required />
-      </div>
-      <div>
-        <p class="input-name">Номер телефона</p>
-        <input class="input-text" type="text" name="number" placeholder="+7-(999)-999-99-99" required />
-      </div>
-      <div>
-        <p class="input-name" required>E-mail</p>
-        <input class="input-text" type="email" name="email" placeholder="example@mail.ru" required />
-      </div>
-      <button class="form-button" type="submit">Отправить</button>
-    </form>
-    <p class="form-text">
-      Нажимая на кнопку, вы даёте согласие на обработку персональных данных
-      и соглашаетесь с политикой конфиденциальности
-    </p>
-  </div> -->
-
   <div class="container py-5">
-
+    <p class="text-center fs-3">MARVIK</p>
   </div>
-  <!-- <div class="footer">
-    <p class="copyright">©All rights reserves</p>
-    <p class="text">MARVIK</p>
-  </div> -->
   <!-- <div class="social-bar">
       <a href="http://vk.com" class="social-item">
         <img src="./assets/images/social-bar/" alt="VK" />
@@ -448,7 +398,7 @@
                   {
                     title: "РЕДАКТИРОВАНИЕ ПОСЛЕ МОНТАЖА",
                     subtitle: "3 изменения бесплатно, далее каждое исправление 500р.",
-                    price: "0-500"
+                    price: "500"
                   }
                 ]
               }
@@ -456,8 +406,54 @@
           ]
         }
       }
-    }).mount('#app-lists')
+    }).mount('#app-lists');
+
+    createApp({
+      data() {
+        return {
+          photos: [
+            {
+              title: "Экспресс-съемка",
+              time: "30 минут",
+              price: "3000",
+              others: [
+                "консультация перед съемкой",
+                "15 фотографий в авторской обработке",
+                "1 образ",
+              ]
+            },
+            {
+              title: "Премиум",
+              time: "2 часа",
+              price: "7000",
+              others: [
+                "консультация перед съемкой",
+                "подбор образа",
+                "1-2 образ",
+                "подбор локации",
+                "50 фотографий в авторской обработке",
+                "20 фотографий в ретуши выбираете вы",
+              ]
+            },
+            {
+              title: "Стандарт",
+              time: "1 час",
+              price: "5000",
+              others: [
+                "консультация перед съемкой",
+                "подбор образа",
+                "1 образ",
+                "подбор локации",
+                "30 фотографий в авторской обработке",
+                "10 фотографий в ретуши выбираете вы",
+              ]
+            }
+          ]
+        }
+      }
+    }).mount('#app-cards');
   </script>
+
 </body>
 
 </html>
