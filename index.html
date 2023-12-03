@@ -1,54 +1,81 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <title>Marvik</title>
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body class="theme">
-    <div class="header">
-      <div class="burger"></div>
-      <img src="./assets/images/logo.svg" alt="logo" class="logo" />
-      <div class="social-bar">
-        <a href="http://vk.com" class="social-item">
-          <img src="./assets/images/social-bar/" alt="VK" />
-        </a>
-        <a href="http://instagram.com" class="social-item">
-          <img src="./assets/images/social-bar/" alt="Instagram" />
-        </a>
-        <a href="http://telefram.com" class="social-item">
-          <img src="./assets/images/social-bar/" alt="Telegram" />
-        </a>
-        <a href="https://www.whatsapp.com/?lang=ru" class="social-item">
-          <img src="./assets/images/social-bar/" alt="What's App" />
-        </a>
-      </div>
-    </div>
-    <div class="content">
-      <div class="start">
-        <video autoplay muted loop id="start-bg-video">
-          <source
-            src="./assets/video/start-video/test-1980x1080.mp4"
-            type="video/mp4"
-          />
-        </video>
-        <div class="description">
-          <p class="start-title">VIDEOMAKER</p>
-          <p class="start-text">
-            Съемка музыкальных и танцевальных клипов<br />event-мероприятий и
-            рекламы
-          </p>
+
+<head>
+  <title>Marvik</title>
+  <meta charset="UTF-8" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<style>
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "PT Serif";
+    color: white;
+  }
+
+  .bg-gray {
+    background-color: #333 !important;
+  }
+</style>
+
+<body class="bg-dark">
+  <!-- NAVBAR -->
+  <!-- <div class="container py-xl-3">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="about-us">
-        <img
-          class="title-img"
-          src="./assets/images/about-us-photo.png"
-          alt="Фотография Виктории"
-        />
-        <div class="description">
-          <p class="description-text">
+    </nav>
+  </div> -->
+  <!-- VIDEO -->
+  <!-- <video autoplay loop id="video-background" class="h-auto w-100">
+    <source src="./assets/video/start-video/test-1280x720.mp4" type="video/mp4"> Your brower is old </source>
+  </video>
+  <div class="position-absolute top-50 w-100">
+    <h1 class="text-white text-center">VIDEOMAKERDay</h1>
+    <h2 class="text-white text-center">Съемка музыкальных и танцевальных клипов<br />event-мероприятий и
+      рекламы</h2>
+  </div> -->
+  <!-- START -->
+  <!-- <div class="container py-4">
+    <div class="about-us">
+      <div class="row">
+        <div class="col-6">
+          <img src="./assets/images/about-us-photo.png" alt="Фотография Виктории" />
+        </div>
+        <div class="col-6">
+          <p>
             Меня зовут Виктория<br />и я счастливый человек,<br />потому что моя
             работа –<br />самое большое удовольствие. <br /><br />
             Более 4 лет занимаюсь<br />
@@ -66,417 +93,371 @@
             организационные вопросы на себя.<br /><br />
             До встречи на съемке!
           </p>
-          <div class="description-buttons">
-            <button class="btn-left">Услуги</button>
-            <button class="btn-right">Фото/Видео</button>
+          <div class="d-flex gap-5">
+            <button type="button" class="btn btn-lg rounded-5 px-4 py-2 btn-light">Услуги</button>
+            <button type="button" class="btn btn-lg rounded-5 px-4 py-2 btn-light">Фото/Видео</button>
           </div>
         </div>
-      </div>
-      <div class="events">
-        <div class="card">
-          <p class="title">Танцевальные <br />клипы</p>
-          <button class="card-btn">Тарифы</button>
-        </div>
-        <div class="card">
-          <p class="title">
-            Event <br />
-            мероприятия
-          </p>
-          <button class="card-btn">Тарифы</button>
-        </div>
-        <div class="card">
-          <p class="title">Видеосъемка</p>
-          <button class="card-btn">Тарифы</button>
-        </div>
-        <div class="card">
-          <p class="title">Фотосессии</p>
-          <button class="card-btn">Тарифы</button>
-        </div>
-      </div>
-      <div class="services">
-        <p class="services-title">Услуги которые я предоставляю</p>
-        <div class="cards">
-          <div class="card">
-            <p class="card-title">Танцевальные клип</p>
-            <p class="card-text">
-              Танцевальные ролики любой <br />сложности. Съемка и монтаж как
-              <br />однокадрового монтажа, так и <br />многокадрового с большой
-              <br />нарезкам и разными крупностями.
-            </p>
-          </div>
-          <div class="card">
-            <p class="card-title">Реклама</p>
-            <p class="card-text">
-              У вас свой бизнес и нужны крутые <br />продающие ролики для
-              повышения <br />продаж? Рекламные ролики разных <br />форматов
-              подойдут безупречно <br />под разные задачи.
-            </p>
-          </div>
-          <div class="card">
-            <p class="card-title">Еvent - мероприятие</p>
-            <p class="card-text">
-              У вас проходит мероприятие и <br />нужно запечатлеть самые яркие
-              <br />моменты? Ролик об этом событии <br />будет отличным
-              решением.
-            </p>
-          </div>
-          <div class="card">
-            <p class="card-title">Фотосесия</p>
-            <p class="card-text">
-              Снимаю женские, мужские <br />фотосессии, а так же love story.
-              Если <br />хотите запечатлеть на камеру себя <br />или своих
-              близких, то фотосессия <br />то, что вам нужно.
-            </p>
-          </div>
-          <div class="card">
-            <p class="card-title">Проект "Под ключ"</p>
-            <p class="card-text">
-              Полная режиссура видеоролика. <br />Продумываю заранее идею и
-              <br />сценарий, исходя из ваших запросов <br />Делаю раскадровку,
-              как <br />лучше снять и показать. Помогаю <br />подобрать локации
-              и образы.
-            </p>
-          </div>
-          <div class="card">
-            <p class="card-title">Видеопортрет</p>
-            <p class="card-text">
-              Хотите снять запоминающееся <br />видео с собой в главной роли?
-              <br />
-              Сделаем атмосферное видео. <br />С вас хорошее настроение и
-              <br />открытость.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="my-works">
-        <p class="title">Мои работы:</p>
-        <div class="main-video">
-          <iframe
-            id="my-works-main-video"
-            src="https://www.youtube.com/embed/z1fSHCu5-tM"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="second-videos">
-          <iframe
-            src="https://www.youtube.com/embed/PAvXDI5r1QY"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/Jelshe9YTmQ"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/Jelshe9YTmQ"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/Jelshe9YTmQ"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="third-photos">
-          <img
-            src="./assets/images/works/photo-1.jpg"
-            alt="my work 1"
-            class="photo"
-          />
-          <img
-            src="./assets/images/works/photo-2.jpg"
-            alt="my work 2"
-            class="photo"
-          />
-          <img
-            src="./assets/images/works/photo-3.jpg"
-            alt="my work 3"
-            class="photo"
-          />
-          <img
-            src="./assets/images/works/photo-4.jpg"
-            alt="my work 4"
-            class="photo"
-          />
-          <img
-            src="./assets/images/works/photo-5.jpg"
-            alt="my work 5"
-            class="photo"
-          />
-          <img
-            src="./assets/images/works/photo-6.jpg"
-            alt="my work 6"
-            class="photo"
-          />
-          <img
-            src="./assets/images/works/photo-7.jpg"
-            alt="my work 7"
-            class="photo"
-          />
-          <img
-            src="./assets/images/works/photo-8.jpeg"
-            alt="my work 8"
-            class="photo"
-          />
-          <img
-            src="./assets/images/works/photo-9.jpeg"
-            alt="my work 8"
-            class="photo"
-          />
-        </div>
-      </div>
-      <div class="rates">
-        <div class="rates-video">
-          <p class="rates-video-title">Тарифы видео</p>
-          <p class="rates-video-subtitle">
-            Транспортные расходы дополнительно включаются <br />к окончательной
-            стоимости
-          </p>
-          <div class="container">
-            <div class="list">
-              <p class="list-title">СЪЕМКА</p>
-              <div class="item">
-                <div class="item-left">
-                  <p class="item-left-title">СЪЕМКА 1 Ч</p>
-                  <p class="item-left-text">+ исходники</p>
-                </div>
-                <p class="item-right-text">4000</p>
-              </div>
-              <div class="item">
-                <div class="item-left">
-                  <p class="item-left-title">СЪЕМКА 2 Ч</p>
-                  <p class="item-left-text">+ исходники</p>
-                </div>
-                <p class="item-right-text">7500</p>
-              </div>
-              <div class="item">
-                <div class="item-left">
-                  <p class="item-left-title">СЪЕМКА 3 Ч</p>
-                  <p class="item-left-text">+ исходники</p>
-                </div>
-                <p class="item-right-text">11000</p>
-              </div>
-              <div class="item">
-                <div class="item-left">
-                  <p class="item-left-title">СЪЕМКА 4 Ч И БОЛЕЕ</p>
-                  <p class="item-left-text">+ исходники</p>
-                </div>
-                <p class="item-right-text">от 14500</p>
-              </div>
-            </div>
-            <div class="list">
-              <p class="list-title">МОНТАЖ</p>
-              <div class="item">
-                <div class="item-left">
-                  <p class="item-left-title">МОНТАЖ 1 МИН</p>
-                  <p class="item-left-text">
-                    монтаж с разными планами, переходы, эффекты, цветокоррекция
-                  </p>
-                </div>
-                <p class="item-right-text">4500</p>
-              </div>
-              <div class="item">
-                <div class="item-left">
-                  <p class="item-left-title">ОБРАБОТКА РЕЧИ 1 МИН</p>
-                  <p class="item-left-text">
-                    монтаж с разными планами, переходы, эффекты, цветокоррекция
-                  </p>
-                </div>
-                <p class="item-right-text">1000</p>
-              </div>
-              <div class="item">
-                <div class="item-left">
-                  <p class="item-left-title">ТИТРЫ / ТЕКСТ. ЗАСТАВКИ 1 МИН</p>
-                  <p class="item-left-text">вертикальный/горизонтальный</p>
-                </div>
-                <p class="item-right-text">1000</p>
-              </div>
-              <div class="item">
-                <div class="item-left">
-                  <p class="item-left-title">SOUND DESIGH 1 МИН</p>
-                  <p class="item-left-text">
-                    3 изменения бесплатно, далее каждое исправление 500р
-                  </p>
-                </div>
-                <p class="item-right-text">1000</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="rates-video">
-          <p class="rates-video-title">Тарифы танцевальных видео</p>
-          <p class="rates-video-subtitle">
-            окончаельная стоимость рассчитывается индивидуально
-          </p>
-          <div class="container">
-            <div class="list">
-              <p class="list-title">СЪЕМКА</p>
-              <div class="item">
-                <div class="item-left">
-                  <p class="item-left-title">СЪЕМКА 1 Ч</p>
-                  <p class="item-left-text">+ исходники</p>
-                </div>
-                <p class="item-right-text">3500</p>
-              </div>
-              <div class="item">
-                <div class="item-left">
-                  <p class="item-left-title">СЪЕМКА 2 Ч</p>
-                  <p class="item-left-text">+ исходники</p>
-                </div>
-                <p class="item-right-text">6500</p>
-              </div>
-              <div class="item">
-                <div class="item-left">
-                  <p class="item-left-title">СЪЕМКА 3 Ч</p>
-                  <p class="item-left-text">+ исходники</p>
-                </div>
-                <p class="item-right-text">9500</p>
-              </div>
-              <div class="item">
-                <div class="item-left">
-                  <p class="item-left-title">СЪЕМКА 4 Ч И БОЛЕЕ</p>
-                  <p class="item-left-text">+ исходники</p>
-                </div>
-                <p class="item-right-text">от 12000</p>
-              </div>
-            </div>
-            <div class="list">
-              <p class="list-title">МОНТАЖ</p>
-              <div class="item">
-                <div class="item-left">
-                  <p class="item-left-title">ОДНОКАДРОВЫЙ МОНТАЖ 1 МИН</p>
-                  <p class="item-left-text">
-                    монтаж без склеик, эффекты, цветокоррекция
-                  </p>
-                </div>
-                <p class="item-right-text">3000</p>
-              </div>
-              <div class="item">
-                <div class="item-left">
-                  <p class="item-left-title">РАЗНОПЛАНОВЫЙ МОНТАЖ 1 МИН</p>
-                  <p class="item-left-text">
-                    монтаж с разными планами, переходы, эффекты,
-                    <br />цветокоррекция
-                  </p>
-                </div>
-                <p class="item-right-text">4000</p>
-              </div>
-              <div class="item">
-                <div class="item-left">
-                  <p class="item-left-title">ДОПОЛНИТЕЛЬНЫЙ МОНТАЖ 1 МИН</p>
-                  <p class="item-left-text">вертикальный/горизонтальный</p>
-                </div>
-                <p class="item-right-text">от 1000</p>
-              </div>
-              <div class="item">
-                <div class="item-left">
-                  <p class="item-left-title">РЕДАКТИРОВАНИЕ ПОСЛЕ МОНТАЖА</p>
-                  <p class="item-left-text">
-                    3 изменения бесплатно, далее каждое исправление 500р.
-                  </p>
-                </div>
-                <p class="item-right-text">0-500</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="rates-photo">
-          <div class="title">Тарифы фото</div>
-          <div class="cards">
-            <div class="card">
-              <p class="card-name">Экспресс-съемка</p>
-              <p class="card-text">30 минут</p>
-              <p class="card-price">3000</p>
-              <p class="card-text">консультация перед съемкой</p>
-              <p class="card-text">15 фотографий в авторской <br />обработке</p>
-              <p class="card-text">1 образ</p>
-              <button class="card-button">Выбрать</button>
-            </div>
-            <div class="card">
-              <p class="card-name">Премиум</p>
-              <p class="card-text">2 часа</p>
-              <p class="card-price">7000</p>
-              <p class="card-text">консультация перед съемкой</p>
-              <p class="card-text">подбор образа</p>
-              <p class="card-text">1-2 образ</p>
-              <p class="card-text">подбор локации</p>
-              <p class="card-text">50 фотографий в авторской <br />обработке</p>
-              <p class="card-text">20 фотографий в ретуши <br />выбираете вы</p>
-              <button class="card-button">Выбрать</button>
-            </div>
-            <div class="card">
-              <p class="card-name">Стандарт</p>
-              <p class="card-text">1 час</p>
-              <p class="card-price">5000</p>
-              <p class="card-text">консультация перед съемкой</p>
-              <p class="card-text">подбор образа</p>
-              <p class="card-text">1 образ</p>
-              <p class="card-text">подбор локации</p>
-              <p class="card-text">30 фотографий в авторской <br />обработке</p>
-              <p class="card-text">10 фотографий в ретуши <br />выбираете вы</p>
-              <button class="card-button">Выбрать</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="my-form">
-        <p class="form-title">Запишись на съемку</p>
-        <form class="form" action="" method="post">
-          <div>
-            <p class="input-name">Имя и Фамилия</p>
-            <input
-              class="input-text"
-              type="text"
-              name="fullname"
-              placeholder="Иванов Иван"
-              required
-            />
-          </div>
-          <div>
-            <p class="input-name">Номер телефона</p>
-            <input
-              class="input-text"
-              type="text"
-              name="number"
-              placeholder="+7-(999)-999-99-99"
-              required
-            />
-          </div>
-          <div>
-            <p class="input-name" required>E-mail</p>
-            <input
-              class="input-text"
-              type="email"
-              name="email"
-              placeholder="example@mail.ru"
-              required
-            />
-          </div>
-          <button class="form-button" type="submit">Отправить</button>
-        </form>
-        <p class="form-text">
-          Нажимая на кнопку, вы даёте согласие на обработку персональных данных
-          и соглашаетесь с политикой конфиденциальности
-        </p>
       </div>
     </div>
-    <div class="footer">
-      <p class="copyright">©All rights reserves</p>
-      <p class="text">MARVIK</p>
+  </div> -->
+  <!-- services -->
+  <!-- <div class="container py-5">
+    <div class="row">
+      <div class="col-3">
+        <p class="fs-4">Танцевальные <br /> клипы</p>
+      </div>
+      <div class="col-3">
+        <p class="fs-4">Event <br /> мероприятия</p>
+      </div>
+      <div class="col-3">
+        <p class="fs-4">Видеосъемка</p>
+      </div>
+      <div class="col-3">
+        <p class="fs-4">Фотосессии</p>
+      </div>
+      <div class="col-3"><button type="button" class="btn rounded-5 px-3 py-1 btn-outline-light">Тарифы</button></div>
+      <div class="col-3"><button type="button" class="btn rounded-5 px-3 py-1 btn-outline-light">Тарифы</button></div>
+      <div class="col-3"><button type="button" class="btn rounded-5 px-3 py-1 btn-outline-light">Тарифы</button></div>
+      <div class="col-3"><button type="button" class="btn rounded-5 px-3 py-1 btn-outline-light">Тарифы</button></div>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </div> -->
+  <!-- SERVICES -->
+  <!-- <div class="container py-5">
+    <h2 class="text-center">Услуги которые я предоставляю</h2>
+    <div class="row p-5 gy-2 gy-md-3 gy-lg-4 justify-content-center">
+      <div class="col-12 col-sm-6 col-lg-4 text-center bg-gray rounded-3 p-4 mx-3" style="width: 21rem;">
+        <h4>Танцевальные клип</h4>
+        <p>Танцевальные ролики любой <br />сложности. Съемка и монтаж как
+          <br />однокадрового монтажа, так и <br />многокадрового с большой
+          <br />нарезкам и разными крупностями. </p>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 text-center bg-gray rounded-3 p-4 mx-3" style="width: 21rem;">
+        <h4>Реклама</h4>
+        <p>У вас свой бизнес и нужны крутые <br />продающие ролики для
+          повышения <br />продаж? Рекламные ролики разных <br />форматов
+          подойдут безупречно <br />под разные задачи. </p>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 text-center bg-gray rounded-3 p-4 mx-3" style="width: 21rem;">
+        <h4>Еvent - мероприятие</h4>
+        <p>У вас проходит мероприятие и <br />нужно запечатлеть самые яркие
+          <br />моменты? Ролик об этом событии <br />будет отличным
+          решением. </p>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 text-center bg-gray rounded-3 p-4 mx-3" style="width: 21rem;">
+        <h4>Фотосесия</h4>
+        <p>Снимаю женские, мужские <br />фотосессии, а так же love story.
+          Если <br />хотите запечатлеть на камеру себя <br />или своих
+          близких, то фотосессия <br />то, что вам нужно. </p>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 text-center bg-gray rounded-3 p-4 mx-3" style="width: 21rem;">
+        <h4>Проект "Под ключ"</h4>
+        <p>Полная режиссура видеоролика. <br />Продумываю заранее идею и
+          <br />сценарий, исходя из ваших запросов <br />Делаю раскадровку,
+          как <br />лучше снять и показать. Помогаю <br />подобрать локации
+          и образы. </p>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 text-center bg-gray rounded-3 p-4 mx-3" style="width: 21rem;">
+        <h4>Видеопортрет</h4>
+        <p>Хотите снять запоминающееся <br />видео с собой в главной роли?
+          <br />
+          Сделаем атмосферное видео. <br />С вас хорошее настроение и
+          <br />открытость. </p>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div class="container py-5">
+    <h2>Мои работы:</h2>
+    <iframe class="w-100" style="height: 40vw;" src="https://www.youtube.com/embed/z1fSHCu5-tM"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div> -->
+
+  <!-- <div class="container">
+    <div class="row gy-3">
+      <div class="col-12 col-sm-6">
+        <iframe class="w-100" style="height: 20vw;" src="https://www.youtube.com/embed/PAvXDI5r1QY"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="col-12 col-sm-6">
+        <iframe class="w-100" style="height: 20vw;" src="https://www.youtube.com/embed/Jelshe9YTmQ"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="col-12 col-sm-6">
+        <iframe class="w-100" style="height: 20vw;" src="https://www.youtube.com/embed/Jelshe9YTmQ"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="col-12 col-sm-6">
+        <iframe class="w-100" style="height: 20vw;" src="https://www.youtube.com/embed/Jelshe9YTmQ"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div class="container">
+    <div class="row gy-4">
+      <img class="col-12 col-md-6 col-xl-4" src="./assets/images/works/photo-1.jpg" alt="my work 1" />
+      <img class="col-12 col-md-6 col-xl-4" src="./assets/images/works/photo-2.jpg" alt="my work 2" />
+      <img class="col-12 col-md-6 col-xl-4" src="./assets/images/works/photo-3.jpg" alt="my work 3" />
+      <img class="col-12 col-md-6 col-xl-4" src="./assets/images/works/photo-4.jpg" alt="my work 4" />
+      <img class="col-12 col-md-6 col-xl-4" src="./assets/images/works/photo-5.jpg" alt="my work 5" />
+      <img class="col-12 col-md-6 col-xl-4" src="./assets/images/works/photo-6.jpg" alt="my work 6" />
+      <img class="col-12 col-md-6 col-xl-4" src="./assets/images/works/photo-7.jpg" alt="my work 7" />
+      <img class="col-12 col-md-6 col-xl-4" src="./assets/images/works/photo-8.jpeg" alt="my work 8" />
+      <img class="col-12 col-md-6 col-xl-4" src="./assets/images/works/photo-9.jpeg" alt="my work 8" />
+    </div>
+  </div> -->
+
+  <div id="app-lists">
+    <div class="container p-5 py-5" v-for="list in lists">
+      <h2 class="text-center">{{ list.title }}</h2>
+      <p class="text-center">{{ list.subtitle }}</p>
+      <div class="row">
+        <div class="col-5 px-5">
+          <p class="fs-3 text-center">{{ list.table_left.title }}</p>
+          <div class="d-flex justify-content-between" v-for="item in list.table_left.body">
+            <div>
+              <p>{{ item.title }}</p>
+              <p>{{ item.subtitle}}</p>
+            </div>
+            <p>{{ item.price }}</p>
+          </div>
+        </div>
+        <div class="col-7 px-5">
+          <p class="fs-3 text-center">{{ list.table_right.title }}</p>
+          <div class="d-flex justify-content-between" v-for="item in list.table_right.body">
+            <div>
+              <p>{{ item.title }}</p>
+              <p>{{ item.subtitle}}</p>
+            </div>
+            <p>{{ item.price }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container py-5">
+
+  </div>
+
+  <!-- <div class="rates-photo">
+    <div class="title">Тарифы фото</div>
+    <div class="cards">
+      <div class="card">
+        <p class="card-name">Экспресс-съемка</p>
+        <p class="card-text">30 минут</p>
+        <p class="card-price">3000</p>
+        <p class="card-text">консультация перед съемкой</p>
+        <p class="card-text">15 фотографий в авторской <br />обработке</p>
+        <p class="card-text">1 образ</p>
+        <button class="card-button">Выбрать</button>
+      </div>
+      <div class="card">
+        <p class="card-name">Премиум</p>
+        <p class="card-text">2 часа</p>
+        <p class="card-price">7000</p>
+        <p class="card-text">консультация перед съемкой</p>
+        <p class="card-text">подбор образа</p>
+        <p class="card-text">1-2 образ</p>
+        <p class="card-text">подбор локации</p>
+        <p class="card-text">50 фотографий в авторской <br />обработке</p>
+        <p class="card-text">20 фотографий в ретуши <br />выбираете вы</p>
+        <button class="card-button">Выбрать</button>
+      </div>
+      <div class="card">
+        <p class="card-name">Стандарт</p>
+        <p class="card-text">1 час</p>
+        <p class="card-price">5000</p>
+        <p class="card-text">консультация перед съемкой</p>
+        <p class="card-text">подбор образа</p>
+        <p class="card-text">1 образ</p>
+        <p class="card-text">подбор локации</p>
+        <p class="card-text">30 фотографий в авторской <br />обработке</p>
+        <p class="card-text">10 фотографий в ретуши <br />выбираете вы</p>
+        <button class="card-button">Выбрать</button>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="container py-5">
+
+  </div>
+
+  <!-- <div class="my-form">
+    <p class="form-title">Запишись на съемку</p>
+    <form class="form" action="" method="post">
+      <div>
+        <p class="input-name">Имя и Фамилия</p>
+        <input class="input-text" type="text" name="fullname" placeholder="Иванов Иван" required />
+      </div>
+      <div>
+        <p class="input-name">Номер телефона</p>
+        <input class="input-text" type="text" name="number" placeholder="+7-(999)-999-99-99" required />
+      </div>
+      <div>
+        <p class="input-name" required>E-mail</p>
+        <input class="input-text" type="email" name="email" placeholder="example@mail.ru" required />
+      </div>
+      <button class="form-button" type="submit">Отправить</button>
+    </form>
+    <p class="form-text">
+      Нажимая на кнопку, вы даёте согласие на обработку персональных данных
+      и соглашаетесь с политикой конфиденциальности
+    </p>
+  </div> -->
+
+  <div class="container py-5">
+
+  </div>
+  <!-- <div class="footer">
+    <p class="copyright">©All rights reserves</p>
+    <p class="text">MARVIK</p>
+  </div> -->
+  <!-- <div class="social-bar">
+      <a href="http://vk.com" class="social-item">
+        <img src="./assets/images/social-bar/" alt="VK" />
+      </a>
+      <a href="http://instagram.com" class="social-item">
+        <img src="./assets/images/social-bar/" alt="Instagram" />
+      </a>
+      <a href="http://telefram.com" class="social-item">
+        <img src="./assets/images/social-bar/" alt="Telegram" />
+      </a>
+      <a href="https://www.whatsapp.com/?lang=ru" class="social-item">
+        <img src="./assets/images/social-bar/" alt="What's App" />
+      </a>
+    </div> -->
+  <script>
+    const { createApp } = Vue
+
+    createApp({
+      data() {
+        return {
+          lists: [
+            {
+              title: "Тарифы видео",
+              subtitle: "Транспортные расходы дополнительно включаются к окончательной стоимости",
+              table_left: {
+                title: "СЪЕМКА",
+                body: [
+                  {
+                    title: "СЪЕМКА 1 Ч",
+                    subtitle: "+ исходники",
+                    price: "4000"
+                  },
+                  {
+                    title: "СЪЕМКА 2 Ч",
+                    subtitle: "+ исходники",
+                    price: "7500"
+                  },
+                  {
+                    title: "СЪЕМКА 3 Ч",
+                    subtitle: "+ исходники",
+                    price: "11000"
+                  },
+                  {
+                    title: "СЪЕМКА 4 Ч И БОЛЕЕ",
+                    subtitle: "+ исходники",
+                    price: "от 14500"
+                  },
+                ]
+              },
+              table_right: {
+                title: "МОНТАЖ",
+                body: [
+                  {
+                    title: "МОНТАЖ 1 МИН",
+                    subtitle: "монтаж с разными планами, переходы, эффекты, цветокоррекция",
+                    price: "4500"
+                  },
+                  {
+                    title: "ОБРАБОТКА РЕЧИ 1 МИН",
+                    subtitle: "монтаж с разными планами, переходы, эффекты, цветокоррекция",
+                    price: "1000"
+                  },
+                  {
+                    title: "ТИТРЫ / ТЕКСТ. ЗАСТАВКИ 1 МИН",
+                    subtitle: "вертикальный/горизонтальный",
+                    price: "1000"
+                  },
+                  {
+                    title: "SOUND DESIGH 1 МИН",
+                    subtitle: "3 изменения бесплатно, далее каждое исправление 500р",
+                    price: "1000"
+                  }
+                ]
+              }
+            },
+            {
+              title: "Тарифы танцевальных видео",
+              subtitle: "Окончаельная стоимость рассчитывается индивидуально",
+              table_left: {
+                title: "СЪЕМКА",
+                body: [
+                  {
+                    title: "СЪЕМКА 1 Ч",
+                    subtitle: "+ исходники",
+                    price: "3500"
+                  },
+                  {
+                    title: "СЪЕМКА 2 Ч",
+                    subtitle: "+ исходники",
+                    price: "6500"
+                  },
+                  {
+                    title: "СЪЕМКА 3 Ч",
+                    subtitle: "+ исходники",
+                    price: "9500"
+                  },
+                  {
+                    title: "СЪЕМКА 4 Ч И БОЛЕЕ",
+                    subtitle: "+ исходники",
+                    price: "от 12000"
+                  }
+                ]
+              },
+              table_right: {
+                title: "МОНТАЖ",
+                body: [
+                  {
+                    title: "ОДНОКАДРОВЫЙ МОНТАЖ 1 МИН",
+                    subtitle: "монтаж без склеик, эффекты, цветокоррекция",
+                    price: "3000"
+                  },
+                  {
+                    title: "РАЗНОПЛАНОВЫЙ МОНТАЖ 1 МИН",
+                    subtitle: "монтаж с разными планами, переходы, эффекты, цветокоррекция",
+                    price: "4000"
+                  },
+                  {
+                    title: "ДОПОЛНИТЕЛЬНЫЙ МОНТАЖ 1 МИН",
+                    subtitle: "вертикальный/горизонтальный",
+                    price: "от 1000"
+                  },
+                  {
+                    title: "РЕДАКТИРОВАНИЕ ПОСЛЕ МОНТАЖА",
+                    subtitle: "3 изменения бесплатно, далее каждое исправление 500р.",
+                    price: "0-500"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }).mount('#app-lists')
+  </script>
+</body>
+
 </html>
