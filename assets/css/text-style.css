@@ -1,0 +1,301 @@
+body {
+  background-color: black;
+}
+
+/* .theme {} */
+
+/* START */
+.start .start-title {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.start .start-text {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ABOUT US */
+.about-us .description-text {
+  color: #FCF9F9;
+
+  font-family: "PT Serif";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.about-us .btn-left {
+  color: #0F0F0F;
+  background: #FCF9F9;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.about-us .btn-right {
+  color: #FCF9F9;
+  background: #B55AD6;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* EVENTS */
+.events .title {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.events .card:nth-child(1) {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/assets/images/events/photo-1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.events .card:nth-child(2) {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/assets/images/events/photo-2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.events .card:nth-child(3) {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/assets/images/events/photo-3.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.events .card:nth-child(4) {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/assets/images/events/photo-4.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.events .card-btn {
+  color: #FFF;
+  border: 1px solid #FFF;
+  background-color: initial;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* SERVICES */
+.services .services-title {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.services .card {
+  background: #333;
+}
+
+.services .card-title {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.services .card-text {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* MY WORKS */
+.my-works .title {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* RATES */
+.rates .rates-video .title {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* RATES VIDEO */
+
+.rates-video-title {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+.rates-video-subtitle {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-style: normal;
+}
+.list-title {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+.item-left-title {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+.item-left-text {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+.item-right-text {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* RATES PHOTO */
+
+.rates .rates-photo .title {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rates .rates-photo .card {
+  border: 1px solid #B0B0B0;
+  background-color: #0F0F0F;
+}
+
+.rates .rates-photo .card-name {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rates .rates-photo .card-text {
+  color: #828282;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rates .rates-photo .card-price {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rates .rates-photo .card-button {
+  color: #FFF;
+  background-color: #B05BD3;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* FORM */
+
+.my-form {
+  background-color: #0F0F0F;
+}
+
+.my-form .form-title {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.my-form .input-name {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.my-form .input-text {
+  background-color: #9E9E9E;
+}
+
+.my-form .input-text::placeholder {
+  color: #565656;
+}
+
+.my-form .form-button {
+  color: white;
+  background-color: #B05BD2;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.my-form .form-text {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* FOOTER */
+
+.footer .copyright {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer .text {
+  color: #FFF;
+
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+}
